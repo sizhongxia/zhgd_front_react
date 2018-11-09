@@ -37,7 +37,7 @@ export default [
           {
             path: '/deviceMonitor/towerCrane',
             name: 'towerCrane',//塔机
-            component: './Admin/Empty',
+            component: './MonitorDevice/TowerCrane',
           },
           {
             path: '/deviceMonitor/elevator',

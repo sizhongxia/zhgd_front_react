@@ -25,8 +25,9 @@ import styles from './ConstructionAccount.less';
 const FormItem = Form.Item;
 const getValue = obj => Object.keys(obj).map(key => obj[key]).join(',');
 
-@connect(({ constructionAccount }) => ({
-  constructionAccount
+@connect(({ constructionAccount, loading }) => ({
+  constructionAccount,
+  loading: loading.effects['constructionAccount/fetch', 'constructionAccount/fetchAreas']
 }))
 
 @Form.create()
@@ -247,7 +248,6 @@ class ConstructionAccount extends PureComponent {
     );
   }
 
-
   renderForm() {
     return this.renderSimpleForm();
   }
@@ -289,8 +289,11 @@ class ConstructionAccount extends PureComponent {
       };
       return (
         <Modal
-          destroyOnClose
+          destroyOnClose={true}
           title="新建工地"
+          style={{ top: 20 }}
+          maskClosable= {false}
+          keyboard= {true}
           visible={createFormModalVisible}
           onOk={okHandle}
           onCancel={() => handleModalVisible()}
@@ -327,8 +330,11 @@ class ConstructionAccount extends PureComponent {
       };
       return (
         <Modal
-          destroyOnClose
+          destroyOnClose={true}
           title="修改工地"
+          style={{ top: 20 }}
+          maskClosable= {false}
+          keyboard= {true}
           visible={updateFormModalVisible}
           onOk={okHandle}
           onCancel={() => handleUpdateModalVisible()}

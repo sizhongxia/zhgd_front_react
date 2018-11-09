@@ -19,7 +19,7 @@ const defaultAntd = require('antd/lib/locale-provider/zh_CN');
 
 const localeInfo = {
   'zh-CN': {
-    messages: require('D:/react/antpro/mypro/src/locales/zh-CN.js').default,
+    messages: require('D:/react/git/zhgd_front_react/src/locales/zh-CN.js').default,
     locale: 'zh-CN',
     antd: require('antd/lib/locale-provider/zh_CN'),
     data: require('react-intl/locale-data/zh'),

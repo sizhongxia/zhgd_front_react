@@ -446,7 +446,7 @@
 
 
 .antd-pro-components-description-list-index-descriptionList {
-  // offset the padding-bottom of last row
+  // offset the padding-bottom of last row
     .ant-row {
       margin-bottom: -16px;
       overflow: hidden;
@@ -485,7 +485,7 @@
   }
 
   &.antd-pro-components-description-list-index-small {
-    // offset the padding-bottom of last row
+    // offset the padding-bottom of last row
       .ant-row {
         margin-bottom: -8px;
       }
@@ -1917,109 +1917,60 @@ i.antd-pro-components-global-header-index-trigger {
 
 
 
-.antd-pro-pages-admin-five-enter-cardList {
-  margin-bottom: -24px;
 
-  .antd-pro-pages-admin-five-enter-card {
-      .ant-card-meta-title {
-        margin-bottom: 12px;
-        & > a {
-          color: @heading-color;
-          display: inline-block;
-          max-width: 100%;
-        }
-      }
-      .ant-card-actions {
-        background: #f7f9fa;
-      }
-      .ant-card-body:hover {
-        .ant-card-meta-title > a {
-          color: @primary-color;
-        }
-      }
-  }
-  .antd-pro-pages-admin-five-enter-item {
-    height: 64px;
-  }
+.antd-pro-pages-admin-five-enter-filterCardList {
+
+    .ant-upload.ant-upload-select-picture-card {
+      width: 28px;
+      height: 28px;
+    }
+    
+    .antd-pro-pages-admin-five-enter-ant-card-meta-content {
+      margin-top: 0;
+    }
+    .ant-card-meta-avatar {
+      font-size: 0;
+    }
+    .ant-card-actions {
+      background: #f7f9fa;
+    }
     .ant-list .ant-list-item-content-single {
       max-width: 100%;
     }
-}
-
-.antd-pro-pages-admin-five-enter-extraImg {
-  margin-top: -60px;
-  text-align: center;
-  width: 195px;
-  img {
-    width: 100%;
+  .cardInfo {
+    .clearfix();
+    margin-top: 16px;
+    margin-left: 16px;
+    & > div {
+      position: relative;
+      text-align: left;
+      float: left;
+      width: 80%;
+    }
   }
 }
 
-.antd-pro-pages-admin-five-enter-newButton {
-  background-color: #fff;
-  border-color: @border-color-base;
-  border-radius: @border-radius-sm;
-  color: @text-color-secondary;
+.antd-pro-pages-admin-five-enter-pagination {
   width: 100%;
-  height: 188px;
-}
-
-.antd-pro-pages-admin-five-enter-cardAvatar {
-  width: 48px;
-  height: 48px;
-  border-radius: 48px;
-}
-
-.antd-pro-pages-admin-five-enter-cardDescription {
-  .textOverflowMulti();
+  height: 60px;
+  margin-top: 10px;
+  text-align: center;
 }
 
 .antd-pro-pages-admin-five-enter-pageHeaderContent {
   position: relative;
 }
 
-.antd-pro-pages-admin-five-enter-contentLink {
-  margin-top: 16px;
-  a {
-    margin-right: 32px;
-    img {
-      width: 24px;
-    }
-  }
-  img {
-    vertical-align: middle;
-    margin-right: 8px;
-  }
-}
-
 @media screen and (max-width: @screen-lg) {
-  .antd-pro-pages-admin-five-enter-contentLink {
-    a {
-      margin-right: 16px;
-    }
-  }
+
 }
 @media screen and (max-width: @screen-md) {
-  .antd-pro-pages-admin-five-enter-extraImg {
-    display: none;
-  }
+
 }
 
 @media screen and (max-width: @screen-sm) {
   .antd-pro-pages-admin-five-enter-pageHeaderContent {
     padding-bottom: 30px;
-  }
-  .antd-pro-pages-admin-five-enter-contentLink {
-    position: absolute;
-    left: 0;
-    bottom: -4px;
-    width: 1000px;
-    a {
-      margin-right: 16px;
-    }
-    img {
-      margin-right: 4px;
-    }
   }
 }
 
@@ -2154,6 +2105,194 @@ i.antd-pro-components-global-header-index-trigger {
     .antd-pro-pages-login-login-register {
       float: right;
     }
+  }
+}
+
+
+
+
+.antd-pro-pages-monitor-device-tower-crane-standardList {
+    .ant-card-head {
+      border-bottom: none;
+    }
+    .antd-pro-pages-monitor-device-tower-crane-ant-card-head-title {
+      line-height: 32px;
+      padding: 24px 0;
+    }
+    .antd-pro-pages-monitor-device-tower-crane-ant-card-extra {
+      padding: 24px 0;
+    }
+    .antd-pro-pages-monitor-device-tower-crane-ant-list-pagination {
+      text-align: right;
+      margin-top: 24px;
+    }
+    .ant-avatar-lg {
+      width: 48px;
+      height: 48px;
+      line-height: 48px;
+    }
+  .headerInfo {
+    position: relative;
+    text-align: center;
+    & > span {
+      color: @text-color-secondary;
+      display: inline-block;
+      font-size: @font-size-base;
+      line-height: 22px;
+      margin-bottom: 4px;
+    }
+    & > p {
+      color: @heading-color;
+      font-size: 24px;
+      line-height: 32px;
+      margin: 0;
+    }
+    & > em {
+      background-color: @border-color-split;
+      position: absolute;
+      height: 56px;
+      width: 1px;
+      top: 0;
+      right: 0;
+    }
+  }
+  .listContent {
+    font-size: 0;
+    .listContentItem {
+      color: @text-color-secondary;
+      display: inline-block;
+      vertical-align: middle;
+      font-size: @font-size-base;
+      margin-left: 40px;
+      > span {
+        line-height: 20px;
+      }
+      > p {
+        margin-top: 4px;
+        margin-bottom: 0;
+        line-height: 22px;
+      }
+    }
+  }
+  .extraContentSearch {
+    margin-left: 16px;
+    width: 272px;
+  }
+}
+
+@media screen and (max-width: @screen-xs) {
+  .antd-pro-pages-monitor-device-tower-crane-standardList {
+      .ant-list-item-content {
+        display: block;
+        flex: none;
+        width: 100%;
+      }
+      .antd-pro-pages-monitor-device-tower-crane-ant-list-item-action {
+        margin-left: 0;
+      }
+    .antd-pro-pages-monitor-device-tower-crane-listContent {
+      margin-left: 0;
+      & > div {
+        margin-left: 0;
+      }
+    }
+    .listCard {
+      :global {
+        .ant-card-head-title {
+          overflow: visible;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: @screen-sm) {
+  .antd-pro-pages-monitor-device-tower-crane-standardList {
+    .antd-pro-pages-monitor-device-tower-crane-extraContentSearch {
+      margin-left: 0;
+      width: 100%;
+    }
+    .antd-pro-pages-monitor-device-tower-crane-headerInfo {
+      margin-bottom: 16px;
+      & > em {
+        display: none;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: @screen-md) {
+  .antd-pro-pages-monitor-device-tower-crane-standardList {
+    .antd-pro-pages-monitor-device-tower-crane-listContent {
+      & > div {
+        display: block;
+      }
+      & > div:last-child {
+        top: 0;
+        width: 100%;
+      }
+    }
+  }
+  .antd-pro-pages-monitor-device-tower-crane-listCard {
+      .ant-radio-group {
+        display: block;
+        margin-bottom: 8px;
+      }
+  }
+}
+
+@media screen and (max-width: @screen-lg) and (min-width: @screen-md) {
+  .antd-pro-pages-monitor-device-tower-crane-standardList {
+    .antd-pro-pages-monitor-device-tower-crane-listContent {
+      & > div {
+        display: block;
+      }
+      & > div:last-child {
+        top: 0;
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: @screen-xl) {
+  .antd-pro-pages-monitor-device-tower-crane-standardList {
+    .antd-pro-pages-monitor-device-tower-crane-listContent {
+      & > div {
+        margin-left: 24px;
+      }
+      & > div:last-child {
+        top: 0;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .antd-pro-pages-monitor-device-tower-crane-standardList {
+    .antd-pro-pages-monitor-device-tower-crane-listContent {
+      text-align: right;
+      & > div:last-child {
+        top: 0;
+      }
+    }
+  }
+}
+
+.antd-pro-pages-monitor-device-tower-crane-standardListForm {
+    .ant-form-item {
+      margin-bottom: 12px;
+      &:last-child {
+        padding-top: 4px;
+        margin-bottom: 32px;
+      }
+    }
+}
+
+.antd-pro-pages-monitor-device-tower-crane-formResult {
+  width: 100%;
+  [class^='title'] {
+    margin-bottom: 8px;
   }
 }
 
