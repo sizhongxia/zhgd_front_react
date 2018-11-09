@@ -150,8 +150,8 @@ class TowerCrane extends PureComponent {
             <div className={styles.extraContent}>
                 <RadioGroup defaultValue="all">
                     <RadioButton value="all">全部</RadioButton>
-                    <RadioButton value="progress">进行中</RadioButton>
-                    <RadioButton value="waiting">等待中</RadioButton>
+                    <RadioButton value="online">在线</RadioButton>
+                    <RadioButton value="outline">离线</RadioButton>
                 </RadioGroup>
                 <Search className={styles.extraContentSearch} placeholder="请输入" onSearch={() => ({})} />
             </div>
@@ -257,14 +257,14 @@ class TowerCrane extends PureComponent {
                 <div className={styles.standardList}>
                     <Card bordered={false}>
                         <Row>
-                            <Col sm={8} xs={24}>
-                                <Info title="我的待办" value="8个任务" bordered />
+                            <Col sm={8} xs={8}>
+                                <Info title="全部" value="10" bordered />
                             </Col>
-                            <Col sm={8} xs={24}>
-                                <Info title="本周任务平均处理时间" value="32分钟" bordered />
+                            <Col sm={8} xs={8}>
+                                <Info title="在线" value="8" bordered />
                             </Col>
-                            <Col sm={8} xs={24}>
-                                <Info title="本周完成任务数" value="24个任务" />
+                            <Col sm={8} xs={8}>
+                                <Info title="离线" value="2" />
                             </Col>
                         </Row>
                     </Card>
@@ -272,7 +272,7 @@ class TowerCrane extends PureComponent {
                     <Card
                         className={styles.listCard}
                         bordered={false}
-                        title="标准列表"
+                        title="塔机设备"
                         style={{ marginTop: 24 }}
                         bodyStyle={{ padding: '0 32px 40px 32px' }}
                         extra={extraContent}
